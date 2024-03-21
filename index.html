@@ -8,23 +8,50 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body class="bg-emerald-950">
-    <!-- Content Start -->
-    <div class="grid justify-center mt-20">
-        <h1 class="text-3xl text-white grid justify-center">Doodles Persona</h1>
-        <p class="text-md text-white text-center grid justify-center">Kalian bingung dengan tipe kalian?<br> Mari kita telusuri</p>
-        <img class="" src="img/img-2 (normal).png" alt="gambar intro" width="300rem">
-        <div class="grid justify-center mt-5">
-            <a href="quiz.html" class="w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Start</a>
+    <div class="text-white">
+        <!-- Content Start -->
+        <div class="start-page" id="start-page">
+            <div class="grid justify-center mt-20">
+                <h1 class="text-3xl text-white grid justify-center">Doodles Persona</h1>
+                <p class="text-md text-white text-center grid justify-center">Kalian bingung dengan tipe kalian?<br> Mari kita telusuri</p>
+                <img class="" src="img/img-2 (normal).png" alt="gambar intro" width="300rem">
+                <div class="grid justify-center mt-5">
+                    <div id="start-btn" class="start-btn w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Start</div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Content End -->
+        <!-- Content End -->
 
-    <!-- Footer Start -->
-    <div class="bg-emerald-800 w-full fixed bottom-0">
-        <div class="mx-20 flex justify-center h-16 items-center">
-            <h1 class="text-white">copyright © 2024 akbar-illust</h1>
+
+        <!-- Quiz & Result Start -->
+        <div class="quiz-page" id="quiz-page" style="display: none;">
+            <div id="quiz">
+                <!-- semua isi quiz -->
+            </div>
+            <div id="result" style="display: none;">
+                <p>You're:</p>
+                <div class="result-image">
+                    <img id="result-image" src="" alt="Result Image">
+                </div>
+                <br>
+                <p>Made by: <a href="https://www.instagram.com/akbar_illust/" target="_blank">@akbar-illust</a></p>
+                <!-- <p>website inspiration from Cosmos Persona and created by: <a href="https://www.instagram.com/izonfalzo" target="_blank">@izonfalzo</a></p> -->
+                <a href="index.html" target="_blank"><button class="">Restart Quiz?</button></a>
+            </div>
         </div>
+        <!-- Quiz & Result End -->
+
+
+        <!-- Footer Start -->
+        <div class="bg-emerald-800 w-full fixed bottom-0">
+            <div class="mx-20 flex justify-center h-16 items-center">
+                <h1 class="text-white">copyright © 2024 akbar-illust</h1>
+            </div>
+        </div>
+        <!-- Footer End -->
     </div>
-    <!-- Footer End -->
+    
+
+    <script src="script.js"></script>
 </body>
 </html>

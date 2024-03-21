@@ -350,8 +350,15 @@ function displayQuestion() {
     }
 }
 
-let userAnswers = {};
-displayQuestion();
+document.getElementById('start-btn').addEventListener('click', function() {
+    document.getElementById('start-page').style.display = 'none';
+    document.getElementById('quiz-page').style.display = 'block';
+    currentQuestion = 0;
+    userAnswers = {};
+    displayQuestion(); 
+    // userAnswers.userName = userName;
+});
+
 
 function attachButtonClickHandlers() {
     const choiceButtons = document.querySelectorAll('.next-btn');
@@ -408,3 +415,5 @@ function showResult() {
     document.getElementById('result').style.display = 'block'; // Show the result
     // document.getElementById('restart-button').style.display = 'block'; // Show the restart button
 }
+
+displayQuestion();
