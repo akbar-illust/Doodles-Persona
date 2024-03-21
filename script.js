@@ -339,9 +339,13 @@ function displayQuestion() {
     const quizElement = document.getElementById('quiz');
     const question = questions[currentQuestion];
     if (question) {
-        let html = `<p>${question.question}</p>`;
+        let html = `<p class="w-96 text-center text-xl mb-5">${question.question}</p>`;
         for (const option in question.answers) {
-            html += `<button class="next-btn" value="${option}" id="${option}">${question.answers[option].text}</button>`;
+            html += `
+            <div class="grid justify-center">
+                <button class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl" value="${option}" id="${option}">${question.answers[option].text}</button>
+            </div>
+            `;
         }
         quizElement.innerHTML = html;
         attachButtonClickHandlers();
@@ -404,6 +408,7 @@ function showResult() {
 
     const personalityData = resultOptions[result];
     if (personalityData) {
+        
 
         resultImage.src = "images/"+personalityData.image;
         resultImage.alt = `${personalityData.image} Image`;
@@ -415,5 +420,15 @@ function showResult() {
     document.getElementById('result').style.display = 'block'; // Show the result
     // document.getElementById('restart-button').style.display = 'block'; // Show the restart button
 }
+
+function restartQuiz() {
+    currentQuestion = 0;
+    userAnswers = {};
+    document.getElementById('result').style.display = 'none';
+    document.getElementById('quiz').style.display = 'grid';
+    displayQuestion(); // Start the quiz from the beginning
+}
+
+document.getElementById('restart-btn').addEventListener('click', restartQuiz);
 
 displayQuestion();

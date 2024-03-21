@@ -13,10 +13,14 @@
         <div class="start-page" id="start-page">
             <div class="grid justify-center mt-20">
                 <h1 class="text-3xl text-white grid justify-center">Doodles Persona</h1>
-                <p class="text-md text-white text-center grid justify-center">Kalian bingung dengan tipe kalian?<br> Mari kita telusuri</p>
-                <img class="" src="img/img-2 (normal).png" alt="gambar intro" width="300rem">
+                <div class="grid justify-center">
+                    <p class="text-md text-white text-center grid justify-center w-80 text-lg">Masuk ke dunia para Doodles tinggal dan temukan Doodles mu</p>
+                </div>
+                <div class="grid justify-center">
+                    <img src="img/img-2 (normal).png" alt="gambar intro" width="300rem">
+                </div>
                 <div class="grid justify-center mt-5">
-                    <div id="start-btn" class="start-btn w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Start</div>
+                    <button id="start-btn" class="start-btn w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Start</button>
                 </div>
             </div>
         </div>
@@ -25,18 +29,20 @@
 
         <!-- Quiz & Result Start -->
         <div class="quiz-page" id="quiz-page" style="display: none;">
-            <div id="quiz">
+            <div id="quiz" class="grid justify-center mt-20">
                 <!-- semua isi quiz -->
             </div>
             <div id="result" style="display: none;">
-                <p>You're:</p>
-                <div class="result-image">
-                    <img id="result-image" src="" alt="Result Image">
+                <div class="grid justify-center mt-20">
+                    <p class="text-center text-3xl mb-3">You're:</p>
+                    <div class="result-image text-center mb-3">
+                        <img id="result-image" src="" alt="Result Image">
+                    </div>
+                    <p class="text-center mb-3">Made by: <a href="https://www.instagram.com/akbar_illust/" target="_blank">@akbar-illust</a></p>
+                    <!-- <p>website inspiration from Cosmos Persona and created by: <a href="https://www.instagram.com/izonfalzo" target="_blank">@izonfalzo</a></p> -->
+                    <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl">Restart Quiz?</button>
+                    <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl"><a href="index.html">Back To Start</a></button>
                 </div>
-                <br>
-                <p>Made by: <a href="https://www.instagram.com/akbar_illust/" target="_blank">@akbar-illust</a></p>
-                <!-- <p>website inspiration from Cosmos Persona and created by: <a href="https://www.instagram.com/izonfalzo" target="_blank">@izonfalzo</a></p> -->
-                <a href="index.html" target="_blank"><button class="">Restart Quiz?</button></a>
             </div>
         </div>
         <!-- Quiz & Result End -->
