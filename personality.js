@@ -3,7 +3,8 @@ const theDoodles = [
         personality: {
             ISTJ: {
                 image:'01ISTJ.png',
-                text: "You're the ISTJ "
+                title: 'ISTJ',
+                description: "Nope :P Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum, nesciunt vero perferendis aperiam sint natus? Sit totam repellendus quidem."
             },
         }
     },
@@ -11,7 +12,7 @@ const theDoodles = [
         personality: {
             ISFJ: {
                 image:'02ISFJ.png',
-                text: "You're the ISFJ "
+                description: "You're the ISFJ "
             },
         }
     },
@@ -19,7 +20,7 @@ const theDoodles = [
         personality: {
             ESTJ: {
                 image:'03ESTJ.png',
-                text: "You're the ESTJ "
+                description: "You're the ESTJ "
             },
         }
     },
@@ -27,7 +28,7 @@ const theDoodles = [
         personality: {
             ESFJ: {
                 image:'04ESFJ.png',
-                text: "You're the ESFJ "
+                description: "You're the ESFJ "
             },
         }
     },
@@ -35,7 +36,7 @@ const theDoodles = [
         personality: {
             ISTP: {
                 image:'05ISTP.png',
-                text: "You're the ISTP "
+                description: "You're the ISTP "
             },
         }
     },
@@ -43,7 +44,7 @@ const theDoodles = [
         personality: {
             ISFP: {
                 image: '06ISFP.png',
-                text: "You're the ISFP "
+                description: "You're the ISFP "
             },
         }
     },
@@ -51,7 +52,7 @@ const theDoodles = [
         personality: {
             ESTP: {
                 image: '07ESTP.png',
-                text: "You're the ESTP "
+                description: "You're the ESTP "
             },
         }
     },
@@ -59,7 +60,7 @@ const theDoodles = [
         personality: {
             ESFP: {
                 image: '08ESFP.png',
-                text: "You're the ESFP "
+                description: "You're the ESFP "
             },
         }
     },
@@ -67,7 +68,7 @@ const theDoodles = [
         personality: {
             INFJ: {
                 image: '09INFJ.png',
-                text: "You're the INFJ "
+                description: "You're the INFJ "
             },
         }
     },
@@ -75,7 +76,7 @@ const theDoodles = [
         personality: {
             INFP: {
                 image: '10INFP.png',
-                text: "You're the INFP "
+                description: "You're the INFP "
             },
         }
     },
@@ -83,7 +84,7 @@ const theDoodles = [
         personality: {
             ENFJ: {
                 image: '11ENFJ.png',
-                text: "You're the ENFJ "
+                description: "You're the ENFJ "
             },
         }
     },
@@ -91,7 +92,7 @@ const theDoodles = [
         personality: {
             ENFP: {
                 image: '12ENFP.png',
-                text: "You're the ENFP "
+                description: "You're the ENFP "
             },
         }
     },
@@ -99,7 +100,7 @@ const theDoodles = [
         personality: {
             INTJ: {
                 image: '13INTJ.png',
-                text: "You're the INTJ "
+                description: "You're the INTJ "
             },            
         }
     },
@@ -107,7 +108,7 @@ const theDoodles = [
         personality: {
             INTP: {
                 image: '14INTP.png',
-                text: "You're the INTP "
+                description: "You're the INTP "
             },            
         }
     },
@@ -115,7 +116,7 @@ const theDoodles = [
         personality: {
             ENTP: {
                 image: '15ENTP.png',
-                text: "You're the ENTP "
+                description: "You're the ENTP "
             },            
         }
     },
@@ -123,13 +124,12 @@ const theDoodles = [
         personality: {
             ENTJ: {
                 image: '16ENTJ.png',
-                text: "You're the ENTJ "
+                description: "You're the ENTJ "
             },
         }
     },
 ]
 
-function personalityDisplay() {
     function personalityDisplay() {
         const personalityElement = document.getElementById('personality');
         let personalityContent = '';
@@ -140,13 +140,15 @@ function personalityDisplay() {
                 
                 if (personalityKey) {
                     const image = doodle.personality[personalityKey].image;
-                    const text = doodle.personality[personalityKey].text;
+                    const description = doodle.personality[personalityKey].description;
                     
                     personalityContent += `
-                        <div>
+                    <div class="grid justify-center">
+                        <div class="card bg-emerald-800 grid justify-center text-center p-5">
                             <img src="${image}" alt="${personalityKey}">
-                            <p>${text}</p>
+                            <p class="text-wrap">${description}</p>
                         </div>
+                    </div>
                     `;
                 } else {
                     console.log('error')
@@ -160,5 +162,3 @@ function personalityDisplay() {
     
     personalityDisplay();
     
-}
-personalityDisplay()

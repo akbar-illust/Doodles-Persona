@@ -3,11 +3,11 @@ const questions = [
         question: '1. Apakah Anda lebih suka menghabiskan waktu sendiri daripada bersama dengan orang lain?',
         answers: {
             I: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { I: +1, E: 0}
             },
             E: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { I: 0, E: +1}
             }
         },
@@ -16,11 +16,11 @@ const questions = [
         question: '2. Apakah Anda merasa energi Anda lebih terisi ketika Anda sendiri dibandingkan ketika Anda bersama banyak orang?',
         answers: {
             I: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { I: +1, E: 0}
             },
             E: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { I: 0, E: +1}
             }
         },
@@ -29,11 +29,11 @@ const questions = [
         question: '3. Apakah Anda lebih suka memiliki sedikit teman dekat daripada banyak teman yang hanya sebatas kenalan?',
         answers: {
             I: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { I: +1, E: 0}
             },
             E: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { I: 0, E: +1}
             }
         },
@@ -42,11 +42,11 @@ const questions = [
         question: '4. Apakah Anda sering merasa lebih baik ketika Anda memiliki waktu untuk merenung atau melakukan aktivitas sendiri?',
         answers: {
             I: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { I: +1, E: 0}
             },
             E: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { I: 0, E: +1}
             }
         },
@@ -55,11 +55,11 @@ const questions = [
         question: '5. Apakah Anda merasa terbebani atau lelah setelah berinteraksi dengan orang banyak dalam waktu yang lama?',
         answers: {
             I: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { I: +1, E: 0}
             },
             E: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { I: 0, E: +1}
             }
         },
@@ -68,11 +68,11 @@ const questions = [
         question: '6. Apakah Anda lebih suka berfikir tentang kemungkinan-kemungkinan masa depan daripada fakta-fakta yang ada di hadapan Anda?',
         answers: {
             N: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { N: +1, S: 0}
             },
             S: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { N: 0, S: +1}
             }
         },
@@ -81,11 +81,11 @@ const questions = [
         question: '7. Apakah Anda cenderung mencari pola atau hubungan tersembunyi antara hal-hal yang terjadi di sekitar Anda?',
         answers: {
             N: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { N: +1, S: 0}
             },
             S: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { N: +1, S: 0}
             }
         },
@@ -94,11 +94,11 @@ const questions = [
         question: '8. Apakah Anda lebih suka berfokus pada potensi atau kemungkinan yang belum terwujud daripada situasi saat ini?',
         answers: {
             N: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { N: +1, S: 0}
             },
             S: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { N: 0, S: +1}
             }
         },
@@ -107,11 +107,11 @@ const questions = [
         question: '9. Apakah Anda merasa lebih nyaman dalam situasi yang memungkinkan Anda untuk memperluas imajinasi atau berspekulasi tentang kemungkinan-kemungkinan baru?',
         answers: {
             N: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { N: +1, S: 0}
             },
             S: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { N: 0, S: +1}
             }
         },
@@ -120,11 +120,11 @@ const questions = [
         question: '10. Apakah Anda sering merenungkan arti atau makna di balik pengalaman-pengalaman hidup Anda?',
         answers: {
             N: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { N: +1, S: 0}
             },
             S: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { N: 0, S: +1}
             }
         },
@@ -133,11 +133,11 @@ const questions = [
         question: '11. Apakah Anda cenderung membuat keputusan berdasarkan logika dan analisis daripada perasaan dan emosi?',
         answers: {
             T: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { T: +1, F: 0}
             },
             F: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { T: 0, F: +1}
             }
         },
@@ -146,11 +146,11 @@ const questions = [
         question: '12. Apakah Anda merasa lebih nyaman dalam menyampaikan keputusan atau opini tanpa terlalu memperhatikan reaksi emosional orang lain?',
         answers: {
             T: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { T: +1, F: 0}
             },
             F: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { T: 0, F: +1}
             }
         },
@@ -159,11 +159,11 @@ const questions = [
         question: '13. Apakah Anda lebih mempertimbangkan nilai-nilai objektif dalam membuat keputusan daripada mempertimbangkan dampaknya terhadap perasaan orang lain?',
         answers: {
             T: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { T: +1, F: 0}
             },
             F: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { T: 0, F: +1}
             }
         },
@@ -172,11 +172,11 @@ const questions = [
         question: '14. Apakah Anda lebih suka memberikan kritik berdasarkan fakta dan rasionalitas daripada pertimbangan terhadap perasaan orang lain?',
         answers: {
             T: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { T: +1, F: 0}
             },
             F: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { T: 0, F: +1}
             }
         },
@@ -185,11 +185,11 @@ const questions = [
         question: '15. Apakah Anda merasa lebih nyaman dalam situasi yang memerlukan pemikiran kritis dan analisis yang mendalam?',
         answers: {
             T: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { T: +1, F: 0}
             },
             F: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { T: 0, F: +1}
             }
         },
@@ -198,11 +198,11 @@ const questions = [
         question: '16. Apakah Anda merasa lebih nyaman dengan jadwal yang teratur dan rencana yang terperinci?',
         answers: {
             J: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { J: +1, P: 0}
             },
             P: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { J: 0, P: +1}
             }
         },
@@ -211,11 +211,11 @@ const questions = [
         question: '17. Apakah Anda merasa tertekan ketika tugas-tugas atau proyek-proyek berakhir di luar batas waktu yang ditetapkan?',
         answers: {
             J: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { J: +1, P: 0}
             },
             P: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { J: 0, P: +1}
             }
         },
@@ -224,11 +224,11 @@ const questions = [
         question: '18. Apakah Anda cenderung membuat daftar tugas atau rencana yang terstruktur untuk mengatur kegiatan harian Anda?',
         answers: {
             J: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { J: +1, P: 0}
             },
             P: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { J: 0, P: +1}
             }
         },
@@ -237,11 +237,11 @@ const questions = [
         question: '19. Apakah Anda merasa frustrasi ketika situasi tidak terorganisir atau tidak terencana dengan baik?',
         answers: {
             J: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { J: +1, P: 0}
             },
             P: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { J: 0, P: +1}
             }
         },
@@ -250,11 +250,11 @@ const questions = [
         question: '20. Apakah Anda merasa tidak terlalu kerepotan ketika situasi berubah secara tiba-tiba dan Anda harus beradaptasi dengan cepat?',
         answers: {
             P: {
-                text: 'Yes',
+                text: 'Iya',
                 scores: { P: +1, J: 0}
             },
             J: {
-                text: 'No',
+                text: 'Tidak',
                 scores: { P: 0, J: +1}
             }
         },
@@ -339,11 +339,11 @@ function displayQuestion() {
     const quizElement = document.getElementById('quiz');
     const question = questions[currentQuestion];
     if (question) {
-        let html = `<p class="w-96 text-center text-xl mb-5">${question.question}</p>`;
+        let html = `<p class="sm:w-64 md:w-96 text-center sm:text-lg md:text-xl mb-5">${question.question}</p>`;
         for (const option in question.answers) {
             html += `
             <div class="grid justify-center">
-                <button class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl" value="${option}" id="${option}">${question.answers[option].text}</button>
+                <button class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 sm:text-lg md:text-xl p-3 rounded-2xl" value="${option}" id="${option}">${question.answers[option].text}</button>
             </div>
             `;
         }
