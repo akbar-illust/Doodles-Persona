@@ -6,6 +6,39 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="cdn tailwind css 3.4.1.js"></script>
     <title>Doodles Persona</title>
+
+    <style>
+        .badge {
+            color: black;
+            background-color: rgb(239 68 68);
+            animation-name: badge;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes badge {
+            from {
+                color: rgb(248 250 252);
+                background-color: rgb(239 68 68);
+            } to {
+                color: white;
+                /* background-color: rgb(248 113 113); */
+                background-color: rgb(220 38 38);
+                /* background-color: rgb(185 28 28); */
+                /* background-color: rgb(153 27 27); */
+            }
+        }
+
+        /* For Smartphone-S */
+        @media screen and (max-width: 320px) {
+            .footer {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+        }
+    </style>
 </head>
 <body class="bg-emerald-950">
     <div class="text-white">
@@ -27,7 +60,7 @@
                         <a href="personality.html">
                             <button id="" class="text-sm w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Pelajari selengkapnya
                                 <!-- Badge -->
-                                <span class="absolute top-0 right-0 -mt-3 -mr-1 bg-red-500 hover:bg-red-600 text-white text-xs rounded-full px-2 py-1">New</span>
+                                <span class="badge absolute top-0 right-0 -mt-3 -mr-1 text-white text-xs rounded-full px-2 py-1">Baru</span>
                             </button>
                         </a>
                     </div>
@@ -41,7 +74,7 @@
         <!-- Quiz & Result Start -->
         <div class="quiz-page" id="quiz-page" style="display: none;">
             <div id="quiz" class="grid justify-center mt-20">
-                <!-- semua isi quiz -->
+                <!-- quiz content at here-->
             </div>
             <div id="result" style="display: none;">
                 <div class="grid justify-center mt-20">
@@ -62,8 +95,8 @@
 
         <!-- Footer Start -->
         <div class="bg-emerald-800 w-full fixed bottom-0">
-            <div class="mx-20 flex justify-center h-16 items-center">
-                <h1 class="text-white">copyright © 2024 akbar-illust</h1>
+            <div class="flex justify-center h-16 items-center">
+                <h1 class="text-white footer">copyright © 2024 akbar-illust</h1>
             </div>
         </div>
         <!-- Footer End -->
