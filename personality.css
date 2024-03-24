@@ -3,12 +3,24 @@
     .card {
         width: 18rem;
     }
+    .subtitle {
+        width: 18rem;
+    }
+    .btn {
+        justify-content: center;
+    }
 }
 
 /* For Smartphone-L */
 @media screen and (min-width: 321px) and (max-width: 767px) {
     .card {
         width: 20rem;
+    }
+    .subtitle {
+        width: 20rem;
+    }
+    .btn {
+        justify-content: center;
     }
 }
 
