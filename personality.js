@@ -12,7 +12,8 @@ const theDoodles = [
         personality: {
             ISFJ: {
                 image:'02ISFJ.png',
-                description: "You're the ISFJ "
+                title: 'ISFJ',
+                description: "Nope :P Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum, nesciunt vero perferendis aperiam sint natus? Sit totam repellendus quidem."
             },
         }
     },
@@ -20,6 +21,7 @@ const theDoodles = [
         personality: {
             ESTJ: {
                 image:'03ESTJ.png',
+                title: 'ESTJ',
                 description: "You're the ESTJ "
             },
         }
@@ -28,6 +30,7 @@ const theDoodles = [
         personality: {
             ESFJ: {
                 image:'04ESFJ.png',
+                title: 'ESFJ',
                 description: "You're the ESFJ "
             },
         }
@@ -36,6 +39,7 @@ const theDoodles = [
         personality: {
             ISTP: {
                 image:'05ISTP.png',
+                title: 'ISTP',
                 description: "You're the ISTP "
             },
         }
@@ -44,6 +48,7 @@ const theDoodles = [
         personality: {
             ISFP: {
                 image: '06ISFP.png',
+                title: 'ISFP',
                 description: "You're the ISFP "
             },
         }
@@ -52,6 +57,7 @@ const theDoodles = [
         personality: {
             ESTP: {
                 image: '07ESTP.png',
+                title: 'ESTP',
                 description: "You're the ESTP "
             },
         }
@@ -60,6 +66,7 @@ const theDoodles = [
         personality: {
             ESFP: {
                 image: '08ESFP.png',
+                title: 'ESFP',
                 description: "You're the ESFP "
             },
         }
@@ -68,6 +75,7 @@ const theDoodles = [
         personality: {
             INFJ: {
                 image: '09INFJ.png',
+                title: 'INFJ',
                 description: "You're the INFJ "
             },
         }
@@ -76,6 +84,7 @@ const theDoodles = [
         personality: {
             INFP: {
                 image: '10INFP.png',
+                title: 'INFP',
                 description: "You're the INFP "
             },
         }
@@ -84,6 +93,7 @@ const theDoodles = [
         personality: {
             ENFJ: {
                 image: '11ENFJ.png',
+                title: 'ENFJ',
                 description: "You're the ENFJ "
             },
         }
@@ -92,6 +102,7 @@ const theDoodles = [
         personality: {
             ENFP: {
                 image: '12ENFP.png',
+                title: 'ENFP',
                 description: "You're the ENFP "
             },
         }
@@ -100,6 +111,7 @@ const theDoodles = [
         personality: {
             INTJ: {
                 image: '13INTJ.png',
+                title: 'INTJ',
                 description: "You're the INTJ "
             },            
         }
@@ -108,6 +120,7 @@ const theDoodles = [
         personality: {
             INTP: {
                 image: '14INTP.png',
+                title: 'INTP',
                 description: "You're the INTP "
             },            
         }
@@ -116,6 +129,7 @@ const theDoodles = [
         personality: {
             ENTP: {
                 image: '15ENTP.png',
+                title: 'ENTP',
                 description: "You're the ENTP "
             },            
         }
@@ -124,6 +138,7 @@ const theDoodles = [
         personality: {
             ENTJ: {
                 image: '16ENTJ.png',
+                title: 'ENTJ',
                 description: "You're the ENTJ "
             },
         }
@@ -139,13 +154,17 @@ const theDoodles = [
                 const personalityKey = Object.keys(doodle.personality)[0];
                 
                 if (personalityKey) {
+                    const title = doodle.personality[personalityKey].title;
                     const image = doodle.personality[personalityKey].image;
                     const description = doodle.personality[personalityKey].description;
                     
                     personalityContent += `
                     <div class="grid justify-center">
-                        <div class="card bg-emerald-800 grid justify-center text-center p-5">
-                            <img src="${image}" alt="${personalityKey}">
+                        <div class="card bg-emerald-800 grid justify-center p-5 rounded-2xl">
+                            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+                                <img src="${image}" alt="${personalityKey}">
+                                <h1>${title}</h1>
+                            </div>
                             <p class="text-wrap">${description}</p>
                         </div>
                     </div>
