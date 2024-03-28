@@ -7,13 +7,59 @@
     <script src="cdn tailwind css 3.4.1.js"></script>
     <title>Doodles Persona</title>
     <link rel="stylesheet" href="personality.css">
+    <style>
+    .footer {
+        background: rgb(6,95,70);
+        background: linear-gradient(0deg, rgba(6,95,70,1) 0%, rgba(6,89,66,1) 100%);
+    }
+    .header {
+        /* border-radius: 90px 80px 70px 60px; */
+        padding: 1rem;
+        background-color: rgb(6 95 70);
+        /* animation: header 5s ease infinite normal forwards; */
+        animation: header 3s ease-in-out infinite normal forwards;
+    }
+
+    @keyframes header {
+        /* THIS */
+        /* 0% {
+            border-radius: 90px 80px 70px 60px;
+        }
+        25% {
+            border-radius: 80px 70px 60px 90px;
+        }
+        50% {
+            border-radius: 70px 60px 90px 80px;
+        }
+        75% {
+            border-radius: 60px 90px 80px 70px;
+        }
+        100% {
+            border-radius: 90px 80px 70px 60px;
+        } */
+
+        /* OR */
+        0% {
+            border-radius: 90px 50px 90px 50px;
+        } 50% {
+            border-radius: 50px 90px 50px 90px;
+        } 100% {
+            border-radius: 90px 50px 90px 50px;
+        }
+    }
+    </style>
 </head>
 <body class="bg-emerald-950">
-    <div class="text-white grid justify-center mt-20">
-        <h1 class="text-3xl grid justify-center font-semibold">Semua jenis persona</h1>
-        <p class="subtitle text-lg grid justify-center text-center mb-3">Semua jenis persona ada disini, kamu termasuk yang mana?</p>
+    <div class="text-white grid justify-center mt-20 select-none">
+        <div class="grid justify-center">
+            <div class="header">
+                <h1 class="text-3xl grid justify-center font-semibold">Semua jenis persona</h1>
+                <p class="subtitle text-lg grid justify-center text-center mb-3">Semua jenis persona ada disini, kamu termasuk yang mana?</p>
+            </div>
+        </div>
+        <br>
         <div class="grid btn">
-            <button id="" class="w-36 h-10 items-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl"><a href="index.html" class="">Beranda</a></button>
+            <a href="index.html"><button class="w-36 h-10 items-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Beranda</button></a>
         </div>
         <div id="personality" class="grid grid-cols-1 gap-5 mt-5 justify-center">
             <!-- personality list -->
@@ -22,7 +68,7 @@
     </div>
 
     <!-- Footer Start -->
-    <div class="bg-emerald-800 w-full fixed bottom-0">
+    <div class="footer w-full fixed bottom-0">
         <div class="flex justify-center h-16 items-center">
             <h1 class="text-white footer">copyright © 2024 akbar-illust</h1>
         </div>
