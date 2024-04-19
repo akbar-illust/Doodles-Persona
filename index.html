@@ -8,6 +8,11 @@
     <title>Doodles Persona</title>
 
     <style>
+        .header {
+            background: rgb(6, 95, 70);
+            background: linear-gradient(180deg, rgba(6, 95, 70, 1) 0%, rgba(6, 89, 66, 1) 100%);
+        }
+
         .badge {
             color: black;
             background-color: rgb(239 68 68);
@@ -41,18 +46,45 @@
     </style>
 </head>
 <body class="bg-emerald-950">
+    <div class="md:hidden">
+        <nav class="bg-emerald-800">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between py-4">
+                    <div class="text-white font-bold text-xl">Doodles Persona</div>
+                    <div class="hidden md:flex space-x-4">
+                        <a href="#" class="text-white p-2 rounded-xl hover:bg-emerald-900">Kuis</a>
+                        <!-- Tambahkan lebih banyak menu di sini -->
+                    </div>
+                    <button onclick="toggleMenu()" class="md:hidden text-white">
+                        <!-- <img src="icons/menu.png" width="20px" alt=""> -->
+                        <img src="icons/Menu-Line-1--Streamline-Micro.svg" width="20px" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden absolute header w-full ps-1">
+            <div>
+                <ul>
+                    <button class="my-3"><a href="personality.html" class="text-white p-3 hover:text-gray-300">Pelajari Selengkapnya</a>
+                        <span class="badge absolute -ms-1 text-white text-xs rounded-full px-2 py-1">Baru</span>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="text-white select-none">
         <!-- Content Start -->
         <div class="start-page mb-20" id="start-page">
-            <div class="grid justify-center mt-20">
-                <h1 class="text-3xl text-white grid justify-center">Doodles Persona</h1>
-                <div class="grid justify-center">
-                    <p class="text-md text-white text-center grid justify-center w-80 text-lg">Masuk ke dunia para Doodles tinggal dan temukan Doodles mu</p>
+            <div class="grid justify-center mt-10">
+                <h1 class="hidden md:grid text-3xl text-white grid justify-center font-semibold">Doodles Persona</h1>
+                <div class="grid justify-center mt-5">
+                    <p class="text-md text-white text-center grid justify-center w-64 md:w-80 text-lg">Masuk ke dunia para Doodles tinggal dan temukan Doodles mu!</p>
                 </div>
                 <div class="grid justify-center">
-                    <img src="img/img-2 (normal).png" alt="gambar intro" width="300rem">
+                    <img src="img/img-2 (normal).png" alt="gambar intro" width="350rem">
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center mt-5">
                     <div class="grid justify-center mt-5 mx-2">
                         <button id="start-btn" class="start-btn w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">quiz</button>
                     </div>
@@ -64,6 +96,9 @@
                             </button>
                         </a>
                     </div>
+                </div>
+                <div class="flex justify-center mt-5">
+                    <p class="text-xs w-64 md:w-96 text-center">This quiz is inspired by MBTI types, Innate personality, etc. Made by akbar-illust</p>
                 </div>
             </div>
         </div>
@@ -86,7 +121,7 @@
                     <p class="text-center mb-3">(untuk imagenya menyusul.. 😇)</p>
                     <!-- <p>website inspiration from Cosmos Persona and created by: <a href="https://www.instagram.com/izonfalzo" target="_blank">@izonfalzo</a></p> -->
                     <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl">Restart Quiz?</button>
-                    <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl"><a href="index.html">Back To Start</a></button>
+                    <a href="index.html"><button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl">Back To Start</button></a>
                 </div>
             </div>
         </div>
@@ -104,5 +139,11 @@
     
 
     <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
