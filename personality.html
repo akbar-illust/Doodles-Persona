@@ -19,6 +19,10 @@
             background: linear-gradient(180deg, rgba(6, 95, 70, 1) 0%, rgba(6, 89, 66, 1) 100%);
         }
 
+        .header2 {
+            border-bottom: rgb(2 44 34) solid 2px;
+        }
+
         /* .header { */
         /* border-radius: 80px 50px 50px 20px; */
         /* padding: 1rem; */
@@ -54,35 +58,77 @@
             border-radius: 90px 50px 90px 50px;
         } */
         /* } */
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: rgb(6 78 59);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav button {
+            /* padding: 8px 8px 8px 32px; */
+            margin-top: 10px;
+            margin-left: 30px;
+            text-decoration: none;
+            /* font-size: 25px; */
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav button:hover {
+            color: #818181;
+        }
+
+        .sidenav .closebtn {
+            margin-right: 8px;
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            font-size: 36px;
+        }
     </style>
 </head>
 
-<body class="bg-emerald-950">
+<body class="bg-emerald-950 select-none">
     <nav class="bg-emerald-800 fixed top-0 w-full">
-        <div>
+        <div class="header2">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between py-4">
                     <div class="text-white font-bold text-xl">Doodles Persona</div>
-                    <div class="hidden md:flex space-x-4">
-                        <a href="index.html" class="text-white p-2 rounded-xl hover:bg-emerald-900">Kuis</a>
-                        <!-- Tambahkan lebih banyak menu di sini -->
-                    </div>
-                    <button onclick="toggleMenu()" class="md:hidden text-white">
+                    <!-- <div class="hidden md:flex space-x-4">
+                        <a href="index.html" class="w-10 text-center text-white p-2 rounded-xl hover:bg-emerald-900">1</a>
+                    </div> -->
+                    <!-- <button onclick="toggleMenu()" class="text-white p-1 rounded-md hover:bg-emerald-900">
+                        <img src="icons/Menu-Line-1--Streamline-Micro.svg" width="20px" alt="">
+                    </button> -->
+                    <button onclick="openNav()" class="text-white p-1 rounded-md hover:bg-emerald-900">
                         <!-- <img src="icons/menu.png" width="20px" alt=""> -->
                         <img src="icons/Menu-Line-1--Streamline-Micro.svg" width="20px" alt="">
                     </button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden absolute header w-full ps-1">
-            <div>
+        <div id="mySidenav" class="sidenav">
+            <button href="javascript:void(0)" class="closebtn w-auto" onclick="closeNav()">&times;</button>
+            <button class="text-md md:text-2xl"><a href="index.html">Kuis</a></button>
+        </div>
+        <!-- <div id="mobile-menu" class="hidden absolute header w-full md:w-20 ps-1">
+            <div class="grid md:justify-center">
                 <ul>
-                    <li class="my-3"><a href="index.html" class="text-white p-3 hover:text-gray-300">Kuis</a></li>
+                    <li class="my-3"><a href="index.html" class="text-white p-3 hover:text-gray-300" >Kuis</a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </nav>
-    
+
     <!-- <div class="header w-full text-white fixed top-0 bg-emerald-800">
         <div class="flex justify-between items-center m-3">
             <div class="grid btn">
@@ -96,7 +142,8 @@
         <div class="grid justify-center">
             <div class="md:bg-emerald-800 p-3 rounded-full">
                 <h1 class="text-3xl grid justify-center font-semibold">Semua jenis persona</h1>
-                <p class="subtitle text-lg grid justify-center text-center mb-3">Semua jenis persona ada disini, kamu termasuk yang mana?</p>
+                <p class="subtitle text-lg grid justify-center text-center mb-3">Semua jenis persona ada disini, kamu
+                    termasuk yang mana?</p>
             </div>
         </div>
     </div>
@@ -109,18 +156,27 @@
     </div>
 
     <!-- Footer Start -->
-    <div class="footer w-full fixed bottom-0">
-        <div class="flex justify-center h-16 items-center">
-            <h1 class="text-white footer">copyright © 2024 akbar-illust</h1>
+    <div class="footer bg-emerald-800 w-full fixed bottom-0 text-center text-sm">
+        <div class="grid justify-center my-2 items-center">
+            <h1 class="text-white">copyright © 2024 akbar-illust</h1>
+            <p class="text-xs w-64 md:w-96 text-center text-gray-400">version 1.0</p>
         </div>
     </div>
     <!-- Footer End -->
 
     <script src="personality.js"></script>
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+        // function toggleMenu() {
+        //     const menu = document.getElementById('mobile-menu');
+        //     menu.classList.toggle('hidden');
+        // }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 </body>

@@ -8,9 +8,18 @@
     <title>Doodles Persona</title>
 
     <style>
+        .footer {
+            background: rgb(6, 95, 70);
+            background: linear-gradient(0deg, rgba(6, 95, 70, 1) 0%, rgba(6, 89, 66, 1) 100%);
+        }
+
         .header {
             background: rgb(6, 95, 70);
             background: linear-gradient(180deg, rgba(6, 95, 70, 1) 0%, rgba(6, 89, 66, 1) 100%);
+        }
+
+        .header2 {
+            border-bottom: rgb(2 44 34) solid 2px;
         }
 
         .badge {
@@ -43,37 +52,80 @@
                 line-height: 1.25rem;
             }
         }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: rgb(6 78 59);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav button {
+            /* padding: 8px 8px 8px 32px; */
+            margin-top: 10px;
+            margin-left: 20px;
+            text-decoration: none;
+            /* font-size: 25px; */
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav button:hover {
+            color: #818181;
+        }
+
+        .sidenav .closebtn {
+            margin-right: 8px;
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            font-size: 36px;
+        }
     </style>
 </head>
-<body class="bg-emerald-950">
-    <div class="md:hidden fixed top-0 w-full">
-        <nav class="bg-emerald-800">
+<body class="bg-emerald-950 select-none">
+    <nav class="md:hidden bg-emerald-800 fixed top-0 w-full">
+        <div class="header2">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between py-4">
                     <div class="text-white font-bold text-xl">Doodles Persona</div>
-                    <div class="hidden md:flex space-x-4">
-                        <a href="#" class="text-white p-2 rounded-xl hover:bg-emerald-900">Kuis</a>
-                        <!-- Tambahkan lebih banyak menu di sini -->
-                    </div>
-                    <button onclick="toggleMenu()" class="md:hidden text-white">
+                    <!-- <div class="hidden md:flex space-x-4">
+                        <a href="index.html" class="w-10 text-center text-white p-2 rounded-xl hover:bg-emerald-900">1</a>
+                    </div> -->
+                    <!-- <button onclick="toggleMenu()" class="text-white p-1 rounded-md hover:bg-emerald-900">
+                        <img src="icons/Menu-Line-1--Streamline-Micro.svg" width="20px" alt="">
+                    </button> -->
+                    <button onclick="openNav()" class="text-white p-1 rounded-md hover:bg-emerald-900">
                         <!-- <img src="icons/menu.png" width="20px" alt=""> -->
                         <img src="icons/Menu-Line-1--Streamline-Micro.svg" width="20px" alt="">
                     </button>
                 </div>
             </div>
-        </nav>
-        <div id="mobile-menu" class="hidden absolute header w-full ps-1">
-            <div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <button href="javascript:void(0)" class="closebtn w-auto" onclick="closeNav()">&times;</button>
+            <button href="javascript:void(0)" onclick="closeNav()" id="start-btn2">Mulai Kuis</button>
+            <button class="text-md"><a href="personality.html">Jenis Personality</a>
+                <span class="badge absolute ms-2 text-white text-xs rounded-full px-2 py-1">Baru</span>
+            </button>
+        </div>
+        <!-- <div id="mobile-menu" class="hidden absolute header w-full md:w-20 ps-1">
+            <div class="grid md:justify-center">
                 <ul>
-                    <button class="my-3"><a href="personality.html" class="text-white p-3 hover:text-gray-300">Pelajari Selengkapnya</a>
-                        <span class="badge absolute -ms-1 text-white text-xs rounded-full px-2 py-1">Baru</span>
-                    </button>
+                    <li class="my-3"><a href="index.html" class="text-white p-3 hover:text-gray-300" >Kuis</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
+        </div> -->
+    </nav>
 
-    <div class="text-white select-none">
+    <div class="text-white">
         <!-- Content Start -->
         <div class="start-page mb-20" id="start-page">
             <div class="grid justify-center md:mt-10 mt-24">
@@ -90,7 +142,7 @@
                     </div>
                     <div class="grid justify-center mt-5 mx-2 relative">
                         <a href="personality.html">
-                            <button id="" class="text-sm w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Pelajari selengkapnya
+                            <button id="" class="w-36 h-10 grid items-center justify-center bg-emerald-800 text-white hover:bg-emerald-900 rounded-xl">Jenis personality
                                 <!-- Badge -->
                                 <span class="badge absolute top-0 right-0 -mt-3 -mr-1 text-white text-xs rounded-full px-2 py-1">Baru</span>
                             </button>
@@ -98,7 +150,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-5">
-                    <p class="text-xs w-64 md:w-96 text-center">This quiz is inspired by MBTI types, Innate personality, etc. Made by akbar-illust</p>
+                    <!-- <p class="text-xs w-64 md:w-96 text-center">This quiz is inspired by MBTI types, Innate personality, etc. Made by akbar-illust</p> -->
+                    <p class="text-xs w-64 md:w-96 text-center"> Kuis ini terinspirasi dari tipe MBTI, Kepribadian bawaan, dll. Dibuat oleh akbar-illust</p>
                 </div>
             </div>
         </div>
@@ -109,7 +162,7 @@
         <!-- Quiz & Result Start -->
         <div class="quiz-page" id="quiz-page" style="display: none;">
             <div id="quiz" class="grid justify-center mt-20">
-                <!-- quiz content at here-->
+                
             </div>
             <div id="result" style="display: none;">
                 <div class="grid justify-center mt-20">
@@ -120,8 +173,8 @@
                     <p class="text-center mb-3">Made by: <a href="https://www.instagram.com/akbar_illust/" target="_blank">@akbar-illust</a></p>
                     <p class="text-center mb-3">(untuk imagenya menyusul.. 😇)</p>
                     <!-- <p>website inspiration from Cosmos Persona and created by: <a href="https://www.instagram.com/izonfalzo" target="_blank">@izonfalzo</a></p> -->
-                    <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl">Restart Quiz?</button>
-                    <a href="index.html"><button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-xl p-3 rounded-2xl">Back To Start</button></a>
+                    <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-md md:text-xl p-3 rounded-2xl">Restart Quiz?</button>
+                    <a href="index.html"><button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-md md:text-xl p-3 rounded-2xl">Back To Start</button></a>
                 </div>
             </div>
         </div>
@@ -129,9 +182,10 @@
 
 
         <!-- Footer Start -->
-        <div class="bg-emerald-800 w-full fixed bottom-0">
-            <div class="flex justify-center h-16 items-center">
-                <h1 class="text-white footer">copyright © 2024 akbar-illust</h1>
+        <div class="footer bg-emerald-800 w-full fixed bottom-0 text-center">
+            <div class="grid justify-center my-3 items-center">
+                <h1 class="text-white">copyright © 2024 akbar-illust</h1>
+                <p class="text-xs w-64 md:w-96 text-center text-gray-400">version 1.0</p>
             </div>
         </div>
         <!-- Footer End -->
@@ -140,9 +194,17 @@
 
     <script src="script.js"></script>
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+        // function toggleMenu() {
+        //     const menu = document.getElementById('mobile-menu');
+        //     menu.classList.toggle('hidden');
+        // }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 </body>

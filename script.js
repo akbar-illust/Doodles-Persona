@@ -339,7 +339,7 @@ function displayQuestion() {
     const quizElement = document.getElementById('quiz');
     const question = questions[currentQuestion];
     if (question) {
-        let html = `<p class="sm:w-64 md:w-96 text-center sm:text-lg md:text-xl mb-5">${question.question}</p>`;
+        let html = `<div><p class="sm:w-64 md:w-96 text-center sm:text-lg md:text-xl mb-5">${question.question}</p></div>`;
         for (const option in question.answers) {
             html += `
             <div class="grid justify-center">
@@ -355,6 +355,15 @@ function displayQuestion() {
 }
 
 document.getElementById('start-btn').addEventListener('click', function() {
+    document.getElementById('start-page').style.display = 'none';
+    document.getElementById('quiz-page').style.display = 'block';
+    currentQuestion = 0;
+    userAnswers = {};
+    displayQuestion(); 
+    // userAnswers.userName = userName;
+});
+
+document.getElementById('start-btn2').addEventListener('click', function() {
     document.getElementById('start-page').style.display = 'none';
     document.getElementById('quiz-page').style.display = 'block';
     currentQuestion = 0;
@@ -390,8 +399,8 @@ function handleAnswer(event) {
 }
 
 function showResult() {
-    const resultElement = document.getElementById('result');
-    const resultTextContainer = document.querySelector('.result-text');
+    // const resultElement = document.getElementById('result');
+    // const resultTextContainer = document.querySelector('.result-text');
     const resultImage = document.getElementById('result-image');
     const topLetters = {};
 
@@ -416,9 +425,9 @@ function showResult() {
         console.log('error')
     }
 
-    document.getElementById('quiz').style.display = 'none'; // Hide the quiz
-    document.getElementById('result').style.display = 'block'; // Show the result
-    // document.getElementById('restart-button').style.display = 'block'; // Show the restart button
+    document.getElementById('quiz').style.display = 'none';
+    document.getElementById('result').style.display = 'block';
+    // document.getElementById('restart-button').style.display = 'block';
 }
 
 function restartQuiz() {
@@ -426,7 +435,7 @@ function restartQuiz() {
     userAnswers = {};
     document.getElementById('result').style.display = 'none';
     document.getElementById('quiz').style.display = 'grid';
-    displayQuestion(); // Start the quiz from the beginning
+    displayQuestion();
 }
 
 document.getElementById('restart-btn').addEventListener('click', restartQuiz);
