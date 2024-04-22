@@ -638,7 +638,7 @@ const theDoodles = [
                     social_relations: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">relasi sosial</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <liENTP adalah individu yang ekstrovert, energik, dan penuh semangat. Mereka suka berinteraksi dengan orang lain dan sering menjadi pusat perhatian dalam situasi sosial.</li>
+                        <li>ENTP adalah individu yang ekstrovert, energik, dan penuh semangat. Mereka suka berinteraksi dengan orang lain dan sering menjadi pusat perhatian dalam situasi sosial.</li>
                         <li>Mereka memiliki kecenderungan untuk menantang status quo dan mengajukan pertanyaan yang tajam dalam percakapan, membuat mereka menjadi teman yang menarik dan menghibur.</li>
                     </ul>
                     `,
@@ -678,8 +678,44 @@ const theDoodles = [
         personality: {
             ENTJ: {
                 image: '16ENTJ.png',
-                title: 'ENTJ',
-                description: "You're the ENTJ "
+                title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ENTJ</h1>`,
+                description: {
+                    social_relations: `
+                    <h3 class="text-xl md:text-2xl font-semibold underline">relasi sosial</h3>
+                    <ul class="text-sm md:text-lg list-disc ms-5">
+                        <li>ENTJ adalah individu yang ekstrovert, ambisius, dan suka mengambil peran kepemimpinan dalam berbagai situasi sosial. Mereka memiliki kemampuan untuk mempengaruhi dan memotivasi orang lain.</li>
+                        <li>Mereka cenderung menonjol dalam situasi-situasi yang memerlukan pengambilan keputusan cepat dan strategis.</li>
+                    </ul>
+                    `,
+                    daily_life: `
+                    <h3 class="text-xl md:text-2xl font-semibold underline">Keseharian</h3>
+                    <ul class="text-sm md:text-lg list-disc ms-5">
+                        <li>Keseharian seorang ENTJ cenderung diisi dengan aktivitas yang produktif dan terarah. Mereka suka merencanakan kegiatan mereka dengan cermat dan bekerja menuju mencapai tujuan-tujuan yang mereka tetapkan.</li>
+                        <li>Mereka bisa terlibat dalam berbagai aktivitas, mulai dari mengatur jadwal hingga mengembangkan strategi untuk mencapai kesuksesan.</li>
+                    </ul>
+                    `,
+                    friendship: `
+                    <h3 class="text-xl md:text-2xl font-semibold underline">Pertemanan</h3>
+                    <ul class="text-sm md:text-lg list-disc ms-5">
+                        <li>ENTJ adalah individu yang percaya diri, tegas, dan cenderung memiliki sedikit teman yang mereka anggap dekat. Mereka mencari teman yang dapat menghargai pandangan dan tujuan mereka, serta mendukung upaya-upaya mereka dalam mencapai kesuksesan.</li>
+                        <li>Mereka menghargai hubungan yang produktif dan saling menguntungkan, dan cenderung memiliki sedikit toleransi terhadap ketidakproduktifan atau ketidakjujuran dalam hubungan.</li>
+                    </ul>
+                    `,
+                    favorite_things: `
+                    <h3 class="text-xl md:text-2xl font-semibold underline">Hal Yang Disukai</h3>
+                    <ul class="text-sm md:text-lg list-disc ms-5">
+                        <li>ENTJ menyukai tantangan, kesempatan untuk memimpin, dan mencapai kesuksesan dalam segala hal yang mereka lakukan. Mereka menikmati waktu untuk merencanakan dan melaksanakan strategi untuk mencapai tujuan-tujuan yang mereka tetapkan.</li>
+                        <li>Mereka juga menghargai kekuatan, otoritas, dan kontrol, dan cenderung mencari posisi-posisi yang memungkinkan mereka untuk mengambil peran kepemimpinan.</li>
+                    </ul>
+                    `,
+                    jobs: `
+                    <h3 class="text-xl md:text-2xl font-semibold underline">Pekerjaan</h3>
+                    <ul class="text-sm md:text-lg list-disc ms-5">
+                        <li>Dalam pekerjaan, ENTJ cenderung mencari pekerjaan yang memungkinkan mereka untuk memimpin dan mengatur orang lain menuju mencapai tujuan-tujuan yang ditetapkan. Mereka cocok dengan pekerjaan di bidang manajemen, konsultasi, kepemimpinan, atau pengembangan bisnis.</li>
+                        <li>Mereka adalah pemimpin yang kuat dan strategis, dengan kemampuan untuk melihat gambaran besar dan mengembangkan rencana yang efektif untuk mencapai kesuksesan.</li>
+                    </ul>
+                    `,
+                },
             },
         }
     },
