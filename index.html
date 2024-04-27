@@ -52,6 +52,7 @@
                 line-height: 1.25rem;
             }
         }
+        
 
         .sidenav {
             height: 100%;
@@ -131,11 +132,11 @@
         <div class="start-page mb-20" id="start-page">
             <div class="grid justify-center md:mt-10 mt-24">
                 <h1 class="hidden md:grid text-3xl text-white grid justify-center font-semibold">Doodles Persona</h1>
-                <div class="grid justify-center mt-5">
-                    <p class="text-md text-white text-center grid justify-center w-64 md:w-80 text-lg">Masuk ke dunia para Doodles tinggal dan temukan Doodles mu!</p>
+                <div class="grid justify-center my-5">
+                    <p class="text-md text-white text-center grid justify-center w-64 md:w-80 text-lg">Quiz mini untuk menentukan 'siapa' dirimu!</p>
                 </div>
                 <div class="grid justify-center">
-                    <img src="img/img-2 (normal).png" alt="gambar intro" width="350rem">
+                    <img src="img/index.png" class="rounded-full shadow-2xl" alt="gambar intro" width="300px">
                 </div>
                 <div>
                     <div class="flex justify-center mt-5">
@@ -144,16 +145,16 @@
                         </div>
                         <div class="grid justify-center mt-5 mx-2 transition hover:scale-110">
                             <a href="personality.html">
-                                <button id="" class="w-36 h-10 grid items-center justify-center bg-emerald-900 text-white hover:bg-emerald-800 rounded-xl">Jenis personality
+                                <button id="" class="w-36 h-10 grid items-center justify-center bg-emerald-900 text-white hover:bg-emerald-800 rounded-xl">Jenis Personality
                                 </button>
                             </a>
                         </div>
                     </div>
                     <div class="mt-5 grid justify-center">
-                        <div class="relative transition hover:scale-110">
+                        <div class="transition hover:scale-110">
                             <a target="_blank" href="https://akbar-illust.github.io">
-                                <button id="" class="w-36 h-10 grid items-center justify-center bg-emerald-900 text-white hover:bg-emerald-800 rounded-xl">Dashboard
-                                    <span class="badge absolute top-0 -right-1 -mt-3 -mr-1 text-white text-xs rounded-full px-2 py-1">Baru</span>
+                                <button id="" class="text-sm w-36 h-10 grid items-center justify-center bg-emerald-900 text-white hover:bg-emerald-800 rounded-xl">Dashboard Akbar
+                                    <!-- <span class="badge absolute top-0 -right-1 -mt-3 -mr-1 text-white text-xs rounded-full px-2 py-1">Baru</span> -->
                                 </button>
                             </a>
                         </div>
@@ -161,7 +162,7 @@
                 </div>
                 <div class="flex justify-center mt-5">
                     <!-- <p class="text-xs w-64 md:w-96 text-center">This quiz is inspired by MBTI types, Innate personality, etc. Made by akbar-illust</p> -->
-                    <p class="text-xs w-64 md:w-96 text-center"> Kuis ini terinspirasi dari tipe MBTI, Kepribadian bawaan, dll. Dibuat oleh akbar-illust</p>
+                    <p class="text-xs w-64 md:w-96 text-center"> Kuis ini terinspirasi dari tipe MBTI, Kepribadian bawaan, dll. Website dibuat oleh <a class="underline underline-offset-2 hover:text-gray-300" href="https://www.instagram.com/akbar_illust/">akbar_illust</a> dan art dibuat oleh <a class="underline underline-offset-2 hover:text-gray-300" href="https://www.instagram.com/__aleyss/">__aleyss</a></p>
                 </div>
             </div>
         </div>
@@ -170,21 +171,26 @@
 
 
         <!-- Quiz & Result Start -->
-        <div class="quiz-page" id="quiz-page" style="display: none;">
+        <div class="quiz-page mb-24" id="quiz-page" style="display: none;">
             <div id="quiz" class="grid justify-center mt-20">
                 
             </div>
             <div id="result" style="display: none;">
-                <div class="grid justify-center mt-20">
-                    <p class="text-center text-3xl mb-3">You're:</p>
-                    <div class="result-image text-center mb-3">
-                        <img id="result-image" src="" alt="Result Image">
+                <div class="grid justify-center md:mt-12 mt-20">
+                    <p class="text-center text-3xl mb-3">You're The:</p>
+                    <div class="result-image bg-emerald-800 hover:bg-emerald-700 transition hover:scale-105 shadow-2xl rounded-full text-center mb-3">
+                        <img id="result-image" src="" width="300px" alt="Result Image">
                     </div>
-                    <p class="text-center mb-3">Made by: <a href="https://www.instagram.com/akbar_illust/" target="_blank">@akbar-illust</a></p>
-                    <p class="text-center mb-3">(untuk imagenya menyusul.. 😇)</p>
-                    <!-- <p>website inspiration from Cosmos Persona and created by: <a href="https://www.instagram.com/izonfalzo" target="_blank">@izonfalzo</a></p> -->
-                    <button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-md md:text-xl p-3 rounded-2xl">Restart Quiz?</button>
-                    <a href="index.html"><button id="restart-btn" class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 text-md md:text-xl p-3 rounded-2xl">Back To Start</button></a>
+                    <div class="gap-y-5">
+                        <p class="text-center">Website by: <a href="https://www.instagram.com/akbar_illust/" target="_blank">@akbar_illust</a></p>
+                        <p class="text-center">Art by: <a href="https://www.instagram.com/__aleyss/" target="_blank">@__aleyss</a></p>
+                    </div>
+                    <!-- <p class="text-center mb-3">(untuk imagenya menyusul.. 😇)</p> -->
+                    <div class="grid items-center justify-center gap-y-2 mt-3">
+                        <button id="restart-btn" class="next-btn bg-emerald-900 hover:bg-emerald-800 transition hover:scale-110 w-64 text-md md:text-xl p-3 rounded-2xl">Ulang Quiz?</button>
+                        <a href="index.html"><button class="bg-emerald-900 hover:bg-emerald-800 transition hover:scale-110 w-64 text-md md:text-xl p-3 rounded-2xl">Kembali ke Awal</button></a>
+                        <a href="personality.html"><button class="bg-emerald-900 hover:bg-emerald-800 transition hover:scale-110 w-64 text-md md:text-xl p-3 rounded-2xl">Jenis Personality</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,7 +200,7 @@
         <!-- Footer Start -->
         <div class="footer bg-emerald-800 w-full fixed bottom-0 text-center">
             <div class="grid justify-center my-3 items-center">
-                <h1 class="text-white">copyright © 2024 akbar-illust</h1>
+                <h1 class="text-white">copyright © 2024 akbar_illust</h1>
                 <p class="text-xs w-64 md:w-96 text-center text-gray-400">version 1.0</p>
             </div>
         </div>

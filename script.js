@@ -263,23 +263,23 @@ const questions = [
 
 const resultOptions = {
     'ISTJ': {
-        image:'01ISTJ.png',
+        image:'i1ISTJ.png',
         text: "You're the ISTJ "
     },
     'ISFJ': {
-        image:'02ISFJ.png',
+        image:'i2ISFJ.png',
         text: "You're the ISFJ "
     },
     'ESTJ': {
-        image:'03ESTJ.png',
+        image: '03ESTJ.png',
         text: "You're the ESTJ "
     },
     'ESFJ': {
-        image:'04ESFJ.png',
+        image: '04ESFJ.png',
         text: "You're the ESFJ "
     },
     'ISTP': {
-        image:'05ISTP.png',
+        image: '05ISTP.png',
         text: "You're the ISTP "
     },
     'ISFP': {
@@ -343,7 +343,7 @@ function displayQuestion() {
         for (const option in question.answers) {
             html += `
             <div class="grid justify-center">
-                <button class="next-btn bg-emerald-800 hover:bg-emerald-900 w-64 m-3 sm:text-lg md:text-xl p-3 rounded-2xl" value="${option}" id="${option}">${question.answers[option].text}</button>
+                <button class="next-btn bg-emerald-900 hover:bg-emerald-800 transition hover:scale-110 w-64 m-3 sm:text-lg md:text-xl p-3 rounded-2xl" value="${option}" id="${option}">${question.answers[option].text}</button>
             </div>
             `;
         }

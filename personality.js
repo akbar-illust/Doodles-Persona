@@ -2,21 +2,21 @@ const theDoodles = [
     {
         personality: {
             ISTJ: {
-                image:'01ISTJ.png',
+                image:'images/01ISTJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ISTJ</h1>`,
                 description: {
                     social_relations: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">relasi sosial</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
                         <li>ISTJ cenderung memiliki lingkaran sosial yang kecil, terdiri dari teman-teman dekat dan keluarga yang mereka kenal dengan baik.</li>
-                        <li>Mereka tidak terlalu suka dengan interaksi sosial yang berlebihan atau keramaian besar. Mereka lebih suka waktu sendiri untuk merenung atau beraktivitas secara individual.</li>
+                        <li>Tidak terlalu suka dengan interaksi sosial yang berlebihan atau keramaian besar dan lebih suka waktu sendiri untuk merenung atau beraktivitas secara individual.</li>
                     </ul>
                     `,
                     daily_life: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">Keseharian</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>Keseharian seorang ISTJ dipenuhi dengan tugas-tugas yang terstruktur dan jadwal yang jelas. Mereka cenderung melakukan rutinitas yang sama setiap hari.</li>
-                        <li>Aktivitas mereka meliputi menyelesaikan tugas-tugas rumah tangga, bekerja, menata jadwal, dan waktu untuk rekreasi yang terencana.</li>
+                        <li>Selalu dipenuhi dengan tugas-tugas yang terstruktur dan jadwal yang jelas. Mereka cenderung melakukan rutinitas yang sama setiap hari.</li>
+                        <li>ISTJ sangat tepat waktu dan pandai dalam menggunakan waktu.</li>
                     </ul>
                     `,
                     friendship: `
@@ -47,7 +47,7 @@ const theDoodles = [
     {
         personality: {
             ISFJ: {
-                image:'02ISFJ.png',
+                image:'images/02ISFJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ISFJ</h1>`,
                 description: {
                     social_relations: `
@@ -92,7 +92,7 @@ const theDoodles = [
     {
         personality: {
             ESTJ: {
-                image:'03ESTJ.png',
+                image:'images/03ESTJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ESTJ</h1>`,
                 description: {
                     social_relations: `
@@ -137,7 +137,7 @@ const theDoodles = [
     {
         personality: {
             ESFJ: {
-                image:'04ESFJ.png',
+                image: 'images/04ESFJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ESFJ</h1>`,
                 description: {
                     social_relations: `
@@ -182,7 +182,7 @@ const theDoodles = [
     {
         personality: {
             ISTP: {
-                image:'05ISTP.png',
+                image: 'images/05ISTP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ISTP</h1>`,
                 description: {
                     social_relations: `
@@ -227,7 +227,7 @@ const theDoodles = [
     {
         personality: {
             ISFP: {
-                image: '06ISFP.png',
+                image: 'images/06ISFP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ISFP</h1>`,
                 description: {
                     social_relations: `
@@ -272,7 +272,7 @@ const theDoodles = [
     {
         personality: {
             ESTP: {
-                image: '07ESTP.png',
+                image: 'images/07ESTP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ESTP</h1>`,
                 description: {
                     social_relations: `
@@ -317,7 +317,7 @@ const theDoodles = [
     {
         personality: {
             ESFP: {
-                image: '08ESFP.png',
+                image: 'images/08ESFP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ESFP</h1>`,
                 description: {
                     social_relations: `
@@ -362,7 +362,7 @@ const theDoodles = [
     {
         personality: {
             INFJ: {
-                image: '09INFJ.png',
+                image: 'images/09INFJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">INFJ</h1>`,
                 description: {
                     social_relations: `
@@ -407,7 +407,7 @@ const theDoodles = [
     {
         personality: {
             INFP: {
-                image: '10INFP.png',
+                image: 'images/10INFP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">INFP</h1>`,
                 description: {
                     social_relations: `
@@ -452,7 +452,7 @@ const theDoodles = [
     {
         personality: {
             ENFJ: {
-                image: '11ENFJ.png',
+                image: 'images/11ENFJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ENFJ</h1>`,
                 description: {
                     social_relations: `
@@ -497,7 +497,7 @@ const theDoodles = [
     {
         personality: {
             ENFP: {
-                image: '12ENFP.png',
+                image: 'images/12ENFP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ENFP</h1>`,
                 description: {
                     social_relations: `
@@ -542,7 +542,7 @@ const theDoodles = [
     {
         personality: {
             INTJ: {
-                image: '13INTJ.png',
+                image: 'images/13INTJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">INTJ</h1>`,
                 description: {
                     social_relations: `
@@ -587,7 +587,7 @@ const theDoodles = [
     {
         personality: {
             INTP: {
-                image: '14INTP.png',
+                image: 'images/14INTP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">INTP</h1>`,
                 description: {
                     social_relations: `
@@ -632,7 +632,7 @@ const theDoodles = [
     {
         personality: {
             ENTP: {
-                image: '15ENTP.png',
+                image: 'images/15ENTP.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ENTP</h1>`,
                 description: {
                     social_relations: `
@@ -677,7 +677,7 @@ const theDoodles = [
     {
         personality: {
             ENTJ: {
-                image: '16ENTJ.png',
+                image: 'images/16ENTJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ENTJ</h1>`,
                 description: {
                     social_relations: `
@@ -737,9 +737,14 @@ const theDoodles = [
                     personalityContent += `
                     <div class="grid justify-center select-none">
                         <div class="card bg-emerald-800 grid justify-center p-5 rounded-2xl">
-                            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
-                                <img src="${image}" alt="${personalityKey}">
-                                <div class="text-center mb-2 md:text-start md:mb-0">${title}</div>
+                            <div class="grid items-center sm:grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="grid justify-center">
+                                    <img src="${image}" width="300px" alt="${personalityKey}">
+                                </div>
+                                <div class="flex justify-center gap-x-2">
+                                    <div class="text-center mb-2 md:text-start md:mb-0 text-4xl md:text-6xl">The</div>
+                                    <div class="text-center mb-2 md:text-start md:mb-0">${title}</div>
+                                </div>
                             </div>
                             <div>
                                 <div class="">
