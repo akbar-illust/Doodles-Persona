@@ -738,7 +738,7 @@ const theDoodles = [
                     <div class="grid justify-center select-none">
                         <div class="card bg-emerald-800 grid justify-center p-5 rounded-2xl">
                             <div class="grid items-center sm:grid-cols-1 md:grid-cols-2 gap-5">
-                                <div class="grid justify-center">
+                                <div class="bg-emerald-600 rounded-2xl grid justify-center">
                                     <img src="${image}" width="300px" alt="${personalityKey}">
                                 </div>
                                 <div class="flex justify-center gap-x-2">
