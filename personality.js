@@ -2,13 +2,13 @@ const theDoodles = [
     {
         personality: {
             ISTJ: {
-                image:'images/01ISTJ.png',
+                image: 'images/01ISTJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ISTJ</h1>`,
                 description: {
                     social_relations: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">relasi sosial</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>ISTJ cenderung memiliki lingkaran sosial yang kecil, terdiri dari teman-teman dekat dan keluarga yang mereka kenal dengan baik.</li>
+                        <li>Cenderung memiliki lingkaran sosial yang kecil, terdiri dari teman-teman dekat dan keluarga yang mereka kenal dengan baik.</li>
                         <li>Tidak terlalu suka dengan interaksi sosial yang berlebihan atau keramaian besar dan lebih suka waktu sendiri untuk merenung atau beraktivitas secara individual.</li>
                     </ul>
                     `,
@@ -23,21 +23,21 @@ const theDoodles = [
                     <h3 class="text-xl md:text-2xl font-semibold underline">Pertemanan</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
                         <li>Mereka memiliki sedikit teman dekat yang mereka kenal dengan baik dan dapat diandalkan.</li>
-                        <li>ISTJ cenderung mencari pertemanan yang stabil dan dapat diandalkan, bukan hubungan yang bersifat sangat sosial atau bersifat sementara.</li>
+                        <li>Cenderung mencari pertemanan yang stabil dan dapat diandalkan, bukan hubungan yang bersifat sangat sosial atau bersifat sementara.</li>
                     </ul>
                     `,
                     favorite_things: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">Hal Yang Disukai</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>Mereka menyukai keteraturan, konsistensi, dan kepastian dalam kehidupan sehari-hari.</li>
+                        <li>Menyukai keteraturan, konsistensi, dan kepastian dalam kehidupan sehari-hari.</li>
                         <li>ISTJ juga menghargai kejujuran, integritas, dan tanggung jawab dalam hubungan dan pekerjaan.</li>
                     </ul>
                     `,
                     jobs: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">Pekerjaan</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>Dalam pekerjaan, ISTJ cenderung mencari pekerjaan yang menawarkan struktur yang jelas, tugas-tugas yang terorganisir, dan tanggung jawab yang jelas.</li>
-                        <li>Mereka sangat cocok dengan pekerjaan yang membutuhkan ketelitian, penyelesaian tugas-tugas detail, dan konsistensi dalam kinerja.</li>
+                        <li>ISTJ cenderung mencari pekerjaan yang menawarkan struktur yang jelas, tugas-tugas yang terorganisir, dan tanggung jawab yang jelas.</li>
+                        <li>Sangat cocok dengan pekerjaan yang membutuhkan ketelitian, penyelesaian tugas-tugas detail, dan konsistensi dalam kinerja.</li>
                     </ul>
                     `,
                 }
@@ -47,35 +47,35 @@ const theDoodles = [
     {
         personality: {
             ISFJ: {
-                image:'images/02ISFJ.png',
+                image: 'images/02ISFJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ISFJ</h1>`,
                 description: {
                     social_relations: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">relasi sosial</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>ISFJ adalah individu yang peduli dan perhatian terhadap orang lain. Mereka cenderung memiliki hubungan yang dekat dengan keluarga dan teman-teman, dan mereka siap membantu orang lain dalam situasi sulit.</li>
-                        <li>Mereka tidak suka konflik dan cenderung menciptakan lingkungan yang hangat dan damai di sekitar mereka.</li>
+                        <li>Peduli dan perhatian terhadap orang lain serta cenderung memiliki hubungan yang dekat dengan keluarga dan teman-teman, dan mereka siap membantu orang lain dalam situasi sulit.</li>
+                        <li>ISFJ tidak suka konflik dan cenderung menciptakan lingkungan yang hangat dan damai di sekitar mereka.</li>
                     </ul>
                     `,
                     daily_life: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">Keseharian</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>Keseharian seorang ISFJ sering diisi dengan tugas-tugas perawatan, baik untuk diri sendiri maupun untuk orang lain. Mereka bisa jadi terlibat dalam memasak, membersihkan, atau merawat tanaman dan hewan peliharaan.</li>
-                        <li>Mereka juga dapat menghabiskan waktu untuk melakukan kegiatan yang mereka sukai, seperti membaca, menonton film, atau berkebun.</li>
+                        <li>ISFJ cenderung seorang konservatif yang sangat mengikuti nilai tradisional. Dia pandai menempatkan diri dalam keluarga besar, tetapi sering sekali ketika tidak merasa baik pun dia akan berpura-pura dan berkata "Aku baik-baik saja."</li>
+                        <li>ISFJ selalu berhemat dan tidak suka berfoya-foya.</li>
                     </ul>
                     `,
                     friendship: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">Pertemanan</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>ISFJ adalah teman yang setia dan bisa diandalkan. Mereka biasanya memiliki hubungan yang erat dengan beberapa orang, dan mereka akan berusaha keras untuk menjaga hubungan tersebut.</li>
-                        <li>Mereka cenderung menjadi pendengar yang baik dan memberikan dukungan emosional kepada teman-teman mereka dalam situasi sulit.</li>
+                        <li>Berbeda dengan tampak luarnya, ISFJ memiliki perasaan yang sensitif dan peka serta cenderung keras kepala.</li>
+                        <li>ISFJ juga cenderung menjadi pendengar yang baik dan memberikan dukungan emosional kepada teman-teman mereka dalam situasi sulit.</li>
                     </ul>
                     `,
                     favorite_things: `
                     <h3 class="text-xl md:text-2xl font-semibold underline">Hal Yang Disukai</h3>
                     <ul class="text-sm md:text-lg list-disc ms-5">
-                        <li>ISFJ sangat menghargai kehangatan dan kedekatan dalam hubungan mereka. Mereka juga menyukai kegiatan yang melibatkan pelayanan kepada orang lain dan memberikan bantuan yang praktis.</li>
-                        <li>Mereka sering menghargai tradisi dan menghabiskan waktu bersama keluarga atau teman-teman dekat dalam acara-acara yang berarti bagi mereka.</li>
+                        <li>ISFJ selalu takut terhadap kehidupan yang tidak pasti dan sulit untuk menerima suatu perubahan.</li>
+                        <li>ISFJ juga tidak pandai bermulut manis. Ketika menerima pujian, dia akan berusaha lebih keras lagi.</li>
                     </ul>
                     `,
                     jobs: `
@@ -92,7 +92,7 @@ const theDoodles = [
     {
         personality: {
             ESTJ: {
-                image:'images/03ESTJ.png',
+                image: 'images/03ESTJ.png',
                 title: `<h1 class="text-4xl md:text-6xl underline underline-offset-4">ESTJ</h1>`,
                 description: {
                     social_relations: `
@@ -581,7 +581,7 @@ const theDoodles = [
                     </ul>
                     `,
                 },
-            },            
+            },
         }
     },
     {
@@ -626,7 +626,7 @@ const theDoodles = [
                     </ul>
                     `,
                 },
-            },            
+            },
         }
     },
     {
@@ -671,7 +671,7 @@ const theDoodles = [
                     </ul>
                     `,
                 },
-            },            
+            },
         }
     },
     {
@@ -721,22 +721,24 @@ const theDoodles = [
     },
 ]
 
-    function personalityDisplay() {
-        const personalityElement = document.getElementById('personality');
-        let personalityContent = '';
-        
-        for(const doodle of theDoodles) {
-            if (doodle.personality !== undefined && doodle.personality !== null) {
-                const personalityKey = Object.keys(doodle.personality)[0];
-                
-                if (personalityKey) {
-                    const title = doodle.personality[personalityKey].title;
-                    const image = doodle.personality[personalityKey].image;
-                    const description = doodle.personality[personalityKey].description;
-                    
-                    personalityContent += `
+function personalityDisplay() {
+    const personalityElement = document.getElementById('personality');
+    let personalityContent = '';
+
+    for (const doodle of theDoodles) {
+        if (doodle.personality !== undefined && doodle.personality !== null) {
+            const personalityKey = Object.keys(doodle.personality)[0];
+
+            if (personalityKey) {
+                const id = Object.keys(doodle.personality)[0]
+                const title = doodle.personality[personalityKey].title;
+                const image = doodle.personality[personalityKey].image;
+                const description = doodle.personality[personalityKey].description;
+
+                personalityContent += `
                     <div class="grid justify-center select-none">
                         <div class="card bg-emerald-800 grid justify-center p-5 rounded-2xl">
+                        <div id="${id}" class="absolute -mt-20"></div>
                             <div class="grid items-center sm:grid-cols-1 md:grid-cols-2 gap-5">
                                 <div class="bg-emerald-600 rounded-2xl grid justify-center">
                                     <img src="${image}" width="300px" alt="${personalityKey}">
@@ -766,15 +768,14 @@ const theDoodles = [
                         </div>
                     </div>
                     `;
-                } else {
-                    console.log('error')
-                }
             } else {
                 console.log('error')
             }
+        } else {
+            console.log('error')
         }
-        personalityElement.innerHTML = personalityContent;
     }
-    
-    personalityDisplay();
-    
+    personalityElement.innerHTML = personalityContent;
+}
+
+personalityDisplay();

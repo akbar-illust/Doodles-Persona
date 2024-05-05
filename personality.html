@@ -75,7 +75,7 @@
         .sidenav button {
             /* padding: 8px 8px 8px 32px; */
             margin-top: 10px;
-            margin-left: 30px;
+            margin-left: 20px;
             text-decoration: none;
             /* font-size: 25px; */
             color: #f1f1f1;
@@ -117,8 +117,67 @@
             </div>
         </div>
         <div id="mySidenav" class="sidenav">
+            <h1 class="text-2xl text-white font-semibold absolute left-5 top-4">Menu</h1>
             <button href="javascript:void(0)" class="closebtn w-auto" onclick="closeNav()">&times;</button>
-            <button class="text-md md:text-2xl"><a href="index.html">Kuis</a></button>
+            <button class="text-md mb-3 text-nowrap"><a href="index.html">Kembali ke Kuis</a></button>
+            <div class="border border-emerald-500 border-y-2 border-bottom"></div>
+            <div class="grid text-white text-nowrap mt-2" style="margin-left: 20px;">
+                <h1 class="text-xl font-semibold">MBTI Type</h1>
+                <div class="cursor-pointer">
+                    <div class="my-1">
+                        <h3 onclick="toggleGroup1()" class="text-md">group (SJ)</h3>
+                        <ul id="group1" style="display: none;" class="transition list-disc ms-4">
+                            <li><a class="hover:text-gray-400 transition" href="#ISTJ" onclick="closeNav(); closeAllGroup();">ISTJ</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ISFJ" onclick="closeNav(); closeAllGroup();">ISFJ</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ESTJ" onclick="closeNav(); closeAllGroup();">ESTJ</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ESFJ" onclick="closeNav(); closeAllGroup();">ESFJ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-1">
+                        <h3 onclick="toggleGroup2()" class="text-md">group (SP)</h3>
+                        <ul id="group2" style="display: none;" class="transition list-disc ms-4">
+                            <li><a class="hover:text-gray-400 transition" href="#ISTP" onclick="closeNav(); closeAllGroup();">ISTP</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ISFP" onclick="closeNav(); closeAllGroup();">ISFP</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ESTP" onclick="closeNav(); closeAllGroup();">ESTP</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ESFP" onclick="closeNav(); closeAllGroup();">ESFP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-1">
+                        <h3 onclick="toggleGroup3()" class="text-md">group (NF)</h3>
+                        <ul id="group3" style="display: none;" class="transition list-disc ms-4">
+                            <li><a class="hover:text-gray-400 transition" href="#INFJ" onclick="closeNav(); closeAllGroup();">INFJ</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#INFP" onclick="closeNav(); closeAllGroup();">INFP</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ENFJ" onclick="closeNav(); closeAllGroup();">ENFJ</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ENFP" onclick="closeNav(); closeAllGroup();">ENFP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-1">
+                        <h3 onclick="toggleGroup4()" class="text-md">group (NT)</h3>
+                        <ul id="group4" style="display: none;" class="transition list-disc ms-4">
+                            <li><a class="hover:text-gray-400 transition" href="#INTJ" onclick="closeNav(); closeAllGroup();">INTJ</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#INTP" onclick="closeNav(); closeAllGroup();">INTP</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ENTP" onclick="closeNav(); closeAllGroup();">ENTP</a>
+                            </li>
+                            <li><a class="hover:text-gray-400 transition" href="#ENTJ" onclick="closeNav(); closeAllGroup();">ENTJ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- <div id="mobile-menu" class="hidden absolute header w-full md:w-20 ps-1">
             <div class="grid md:justify-center">
@@ -177,6 +236,69 @@
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+
+        const group1 = document.getElementById("group1");
+        const group2 = document.getElementById("group2");
+        const group3 = document.getElementById("group3");
+        const group4 = document.getElementById("group4");
+        function toggleGroup1() {
+            if (group1.style.display === 'none') {
+                document.getElementById("group1").style.display = "grid";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "none";
+            } else {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "none";
+            }
+        }
+        function toggleGroup2() {
+            if (group2.style.display === 'none') {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "grid";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "none";
+            } else {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "none";
+            }
+        }
+        function toggleGroup3() {
+            if (group3.style.display === 'none') {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "grid";
+                document.getElementById("group4").style.display = "none";
+            } else {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "none";
+            }
+        }
+        function toggleGroup4() {
+            if (group4.style.display === 'none') {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "grid";
+            } else {
+                document.getElementById("group1").style.display = "none";
+                document.getElementById("group2").style.display = "none";
+                document.getElementById("group3").style.display = "none";
+                document.getElementById("group4").style.display = "none";
+            }
+        }
+        function closeAllGroup() {
+            document.getElementById("group1").style.display = "none";
+            document.getElementById("group2").style.display = "none";
+            document.getElementById("group3").style.display = "none";
+            document.getElementById("group4").style.display = "none";
         }
     </script>
 </body>
